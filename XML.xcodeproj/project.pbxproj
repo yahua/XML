@@ -22,6 +22,18 @@
 		19CD7AF81A4E66B100EFBA20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CD7AD71A4E66B100EFBA20 /* UIKit.framework */; };
 		19CD7B001A4E66B100EFBA20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19CD7AFE1A4E66B100EFBA20 /* InfoPlist.strings */; };
 		19CD7B021A4E66B100EFBA20 /* XMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B011A4E66B100EFBA20 /* XMLTests.m */; };
+		19CD7B0D1A4E66E600EFBA20 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B0C1A4E66E600EFBA20 /* GDataXMLNode.m */; };
+		19CD7B121A4E6F6A00EFBA20 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CD7B111A4E6F6A00EFBA20 /* libxml2.dylib */; };
+		19CD7B1C1A4EE4BB00EFBA20 /* YHFtpFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B151A4EE4BB00EFBA20 /* YHFtpFileModel.m */; };
+		19CD7B1D1A4EE4BB00EFBA20 /* YHFtpLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B171A4EE4BB00EFBA20 /* YHFtpLogic.m */; };
+		19CD7B1E1A4EE4BB00EFBA20 /* YhFtpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B191A4EE4BB00EFBA20 /* YhFtpRequestManager.m */; };
+		19CD7B1F1A4EE4BB00EFBA20 /* YHFtpRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B1B1A4EE4BB00EFBA20 /* YHFtpRequestOperation.m */; };
+		19CD7B251A4EE54E00EFBA20 /* BookCityNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B221A4EE54E00EFBA20 /* BookCityNet.m */; };
+		19CD7B261A4EE54E00EFBA20 /* BookNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B241A4EE54E00EFBA20 /* BookNetManager.m */; };
+		19CD7B2E1A4EE8AB00EFBA20 /* NSDate+DateFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B2B1A4EE8AB00EFBA20 /* NSDate+DateFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		19CD7B2F1A4EE8AB00EFBA20 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B2D1A4EE8AB00EFBA20 /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		19CD7B341A4F134E00EFBA20 /* FtpUploadNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD7B331A4F134E00EFBA20 /* FtpUploadNetWork.m */; };
+		19CD7B361A4F149200EFBA20 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CD7B351A4F149200EFBA20 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +67,28 @@
 		19CD7AFD1A4E66B100EFBA20 /* XMLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XMLTests-Info.plist"; sourceTree = "<group>"; };
 		19CD7AFF1A4E66B100EFBA20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19CD7B011A4E66B100EFBA20 /* XMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLTests.m; sourceTree = "<group>"; };
+		19CD7B0B1A4E66E600EFBA20 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		19CD7B0C1A4E66E600EFBA20 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		19CD7B111A4E6F6A00EFBA20 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		19CD7B141A4EE4BB00EFBA20 /* YHFtpFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHFtpFileModel.h; sourceTree = "<group>"; };
+		19CD7B151A4EE4BB00EFBA20 /* YHFtpFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHFtpFileModel.m; sourceTree = "<group>"; };
+		19CD7B161A4EE4BB00EFBA20 /* YHFtpLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHFtpLogic.h; sourceTree = "<group>"; };
+		19CD7B171A4EE4BB00EFBA20 /* YHFtpLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHFtpLogic.m; sourceTree = "<group>"; };
+		19CD7B181A4EE4BB00EFBA20 /* YhFtpRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YhFtpRequestManager.h; sourceTree = "<group>"; };
+		19CD7B191A4EE4BB00EFBA20 /* YhFtpRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YhFtpRequestManager.m; sourceTree = "<group>"; };
+		19CD7B1A1A4EE4BB00EFBA20 /* YHFtpRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHFtpRequestOperation.h; sourceTree = "<group>"; };
+		19CD7B1B1A4EE4BB00EFBA20 /* YHFtpRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHFtpRequestOperation.m; sourceTree = "<group>"; };
+		19CD7B211A4EE54E00EFBA20 /* BookCityNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCityNet.h; sourceTree = "<group>"; };
+		19CD7B221A4EE54E00EFBA20 /* BookCityNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCityNet.m; sourceTree = "<group>"; };
+		19CD7B231A4EE54E00EFBA20 /* BookNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookNetManager.h; sourceTree = "<group>"; };
+		19CD7B241A4EE54E00EFBA20 /* BookNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookNetManager.m; sourceTree = "<group>"; };
+		19CD7B2A1A4EE8AB00EFBA20 /* NSDate+DateFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateFunctions.h"; sourceTree = "<group>"; };
+		19CD7B2B1A4EE8AB00EFBA20 /* NSDate+DateFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateFunctions.m"; sourceTree = "<group>"; };
+		19CD7B2C1A4EE8AB00EFBA20 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		19CD7B2D1A4EE8AB00EFBA20 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		19CD7B321A4F134E00EFBA20 /* FtpUploadNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpUploadNetWork.h; sourceTree = "<group>"; };
+		19CD7B331A4F134E00EFBA20 /* FtpUploadNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpUploadNetWork.m; sourceTree = "<group>"; };
+		19CD7B351A4F149200EFBA20 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CD7B361A4F149200EFBA20 /* CFNetwork.framework in Frameworks */,
+				19CD7B121A4E6F6A00EFBA20 /* libxml2.dylib in Frameworks */,
 				19CD7AD61A4E66B100EFBA20 /* CoreGraphics.framework in Frameworks */,
 				19CD7AD81A4E66B100EFBA20 /* UIKit.framework in Frameworks */,
 				19CD7AD41A4E66B100EFBA20 /* Foundation.framework in Frameworks */,
@@ -103,6 +139,8 @@
 		19CD7AD21A4E66B100EFBA20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19CD7B351A4F149200EFBA20 /* CFNetwork.framework */,
+				19CD7B111A4E6F6A00EFBA20 /* libxml2.dylib */,
 				19CD7AD31A4E66B100EFBA20 /* Foundation.framework */,
 				19CD7AD51A4E66B100EFBA20 /* CoreGraphics.framework */,
 				19CD7AD71A4E66B100EFBA20 /* UIKit.framework */,
@@ -114,6 +152,11 @@
 		19CD7AD91A4E66B100EFBA20 /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				19CD7B291A4EE8AB00EFBA20 /* NSDate */,
+				19CD7B201A4EE54E00EFBA20 /* network */,
+				19CD7B131A4EE4BB00EFBA20 /* FtpNetWork */,
+				19CD7B0B1A4E66E600EFBA20 /* GDataXMLNode.h */,
+				19CD7B0C1A4E66E600EFBA20 /* GDataXMLNode.m */,
 				19CD7AE21A4E66B100EFBA20 /* AppDelegate.h */,
 				19CD7AE31A4E66B100EFBA20 /* AppDelegate.m */,
 				19CD7AE51A4E66B100EFBA20 /* Main_iPhone.storyboard */,
@@ -122,6 +165,8 @@
 				19CD7AEC1A4E66B100EFBA20 /* ViewController.m */,
 				19CD7AEE1A4E66B100EFBA20 /* Images.xcassets */,
 				19CD7ADA1A4E66B100EFBA20 /* Supporting Files */,
+				19CD7B321A4F134E00EFBA20 /* FtpUploadNetWork.h */,
+				19CD7B331A4F134E00EFBA20 /* FtpUploadNetWork.m */,
 			);
 			path = XML;
 			sourceTree = "<group>";
@@ -153,6 +198,43 @@
 				19CD7AFE1A4E66B100EFBA20 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19CD7B131A4EE4BB00EFBA20 /* FtpNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				19CD7B141A4EE4BB00EFBA20 /* YHFtpFileModel.h */,
+				19CD7B151A4EE4BB00EFBA20 /* YHFtpFileModel.m */,
+				19CD7B161A4EE4BB00EFBA20 /* YHFtpLogic.h */,
+				19CD7B171A4EE4BB00EFBA20 /* YHFtpLogic.m */,
+				19CD7B181A4EE4BB00EFBA20 /* YhFtpRequestManager.h */,
+				19CD7B191A4EE4BB00EFBA20 /* YhFtpRequestManager.m */,
+				19CD7B1A1A4EE4BB00EFBA20 /* YHFtpRequestOperation.h */,
+				19CD7B1B1A4EE4BB00EFBA20 /* YHFtpRequestOperation.m */,
+			);
+			path = FtpNetWork;
+			sourceTree = "<group>";
+		};
+		19CD7B201A4EE54E00EFBA20 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				19CD7B211A4EE54E00EFBA20 /* BookCityNet.h */,
+				19CD7B221A4EE54E00EFBA20 /* BookCityNet.m */,
+				19CD7B231A4EE54E00EFBA20 /* BookNetManager.h */,
+				19CD7B241A4EE54E00EFBA20 /* BookNetManager.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		19CD7B291A4EE8AB00EFBA20 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				19CD7B2A1A4EE8AB00EFBA20 /* NSDate+DateFunctions.h */,
+				19CD7B2B1A4EE8AB00EFBA20 /* NSDate+DateFunctions.m */,
+				19CD7B2C1A4EE8AB00EFBA20 /* NSDate+Helper.h */,
+				19CD7B2D1A4EE8AB00EFBA20 /* NSDate+Helper.m */,
+			);
+			path = NSDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +335,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CD7B2F1A4EE8AB00EFBA20 /* NSDate+Helper.m in Sources */,
+				19CD7B2E1A4EE8AB00EFBA20 /* NSDate+DateFunctions.m in Sources */,
+				19CD7B341A4F134E00EFBA20 /* FtpUploadNetWork.m in Sources */,
+				19CD7B1C1A4EE4BB00EFBA20 /* YHFtpFileModel.m in Sources */,
 				19CD7AED1A4E66B100EFBA20 /* ViewController.m in Sources */,
+				19CD7B0D1A4E66E600EFBA20 /* GDataXMLNode.m in Sources */,
 				19CD7AE41A4E66B100EFBA20 /* AppDelegate.m in Sources */,
+				19CD7B1D1A4EE4BB00EFBA20 /* YHFtpLogic.m in Sources */,
 				19CD7AE01A4E66B100EFBA20 /* main.m in Sources */,
+				19CD7B1E1A4EE4BB00EFBA20 /* YhFtpRequestManager.m in Sources */,
+				19CD7B1F1A4EE4BB00EFBA20 /* YHFtpRequestOperation.m in Sources */,
+				19CD7B261A4EE54E00EFBA20 /* BookNetManager.m in Sources */,
+				19CD7B251A4EE54E00EFBA20 /* BookCityNet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +484,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XML/XML-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDK_ROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "XML/XML-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -405,6 +502,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XML/XML-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDK_ROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "XML/XML-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
