@@ -31,6 +31,12 @@
     [button setTitle:@"生成书籍排行榜信息" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(makeBooksInfo) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    
+    
+//    [NSThread detachNewThreadSelector: @selector(newThreadProcess)
+//                            toTarget: self
+//                          withObject: nil];
 }
 
 
@@ -76,7 +82,12 @@
             NSLog(@"%@", xmlString);
             
             self.network = [[FtpUploadNetWork alloc] init];
-            [self.network send:data];
+            //[self.network send:data];
+            [BookCityNet postBookTopInfo:data Success:^(NSArray *array) {
+                
+            } failuer:^(NSString *msg) {
+                
+            }];
             
         } failuer:^(NSString *msg) {
             
@@ -132,6 +143,95 @@
     
     NSLog(@"%@" , fff);
     
+}
+
+
+- (void)newThreadProcess
+
+{
+    @autoreleasepool {
+        
+        ////获得当前thread的Runloop
+        
+        NSRunLoop* myRunLoop = [NSRunLoop currentRunLoop];
+        
+        
+        
+        //设置Run loop observer的运行环境
+        
+        CFRunLoopObserverContext context = {0,(__bridge void *)(self),NULL,NULL,NULL};
+        
+        //创建Run loop observer对象
+        
+        //第一个参数用于分配observer对象的内存
+        
+        //第二个参数用以设置observer所要关注的事件，详见回调函数myRunLoopObserver中注释
+        
+        //第三个参数用于标识该observer是在第一次进入runloop时执行还是每次进入run loop处理时均执行
+        
+        //第四个参数用于设置该observer的优先级
+        
+        //第五个参数用于设置该observer的回调函数
+        
+        //第六个参数用于设置该observer的运行环境
+        
+        CFRunLoopObserverRef observer = CFRunLoopObserverCreate(kCFAllocatorDefault,kCFRunLoopAllActivities, YES, 0, nil, &context);
+        
+        if(observer)
+            
+        {
+            //将Cocoa的NSRunLoop类型转换成CoreFoundation的CFRunLoopRef类型
+            
+            CFRunLoopRef cfRunLoop = [myRunLoop getCFRunLoop];
+
+            //将新建的observer加入到当前thread的runloop
+            
+            CFRunLoopAddObserver(cfRunLoop, observer, kCFRunLoopDefaultMode);
+            
+        }
+
+        //
+        
+        [NSTimer scheduledTimerWithTimeInterval: 0.025
+                                        target: self
+                                      selector:@selector(timerProcess)
+                                      userInfo: nil
+                                       repeats: YES];
+        
+
+        do{
+            
+            //启动当前thread的loop直到所指定的时间到达，在loop运行时，runloop会处理所有来自与该run loop联系的inputsource的数据
+            
+            //对于本例与当前run loop联系的inputsource只有一个Timer类型的source。
+            
+            //该Timer每隔1秒发送触发事件给runloop，run loop检测到该事件时会调用相应的处理方法。
+            
+            
+            
+            //由于在run loop添加了observer且设置observer对所有的runloop行为都感兴趣。
+            
+            //当调用runUnitDate方法时，observer检测到runloop启动并进入循环，observer会调用其回调函数，第二个参数所传递的行为是kCFRunLoopEntry。
+            
+            //observer检测到runloop的其它行为并调用回调函数的操作与上面的描述相类似。 
+            
+            [myRunLoop runUntilDate:[NSDate dateWithTimeIntervalSinceNow:5.0]];
+            
+            //当run loop的运行时间到达时，会退出当前的runloop。observer同样会检测到runloop的退出行为并调用其回调函数，第二个参数所传递的行为是kCFRunLoopExit。
+            
+            //loopCount--;
+            
+        }while (1);
+        
+    }
+}
+
+
+
+
+- (void)timerProcess{
+
+    NSLog(@"In timerProcess count .");
 }
 
 @end

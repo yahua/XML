@@ -59,7 +59,11 @@
                         success:(FtpOperationSuccessBlock)sucessBlock
                         failuer:(FtpOperationFailuerBlock)failBlock {
     
+    NSString *filePath = @"111.xml";
     NSURL *url =[NSURL URLWithString:urlString relativeToURL:self.baseURL];
+    //添加后缀（文件名称）
+//    url = CFBridgingRelease(
+//                            CFURLCreateCopyAppendingPathComponent(NULL, (__bridge CFURLRef) url, (__bridge CFStringRef) [filePath lastPathComponent], false));
     NSMutableURLRequest *mutableRequest = [[NSMutableURLRequest alloc] initWithURL:url];
     mutableRequest.HTTPMethod = @"POST";
     [mutableRequest setHTTPBody:data];

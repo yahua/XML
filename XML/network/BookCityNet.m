@@ -47,32 +47,15 @@
     return operation;
 }
 
-+ (YHFtpRequestOperation *)getBookTopInfoWithSuccess:(void(^)(NSData *data))sucessBlock
-                                             failuer:(void(^)(NSString *msg))failBlock {
-    
-    NSString *urlString = @"booksInfo/booksInfo.xml";
-    YHFtpRequestOperation *operation = [[BookNetManager sharedInstance] get:urlString success:^(id data) {
-        if (sucessBlock) {
-            sucessBlock(data);
-        }
-    } failuer:^(NSError *msg) {
-        if (failBlock) {
-            failBlock(@"网络获取失败");
-        }
-    }];
-    
-    return operation;
-}
-
 + (YHFtpRequestOperation *)postBookTopInfo:(NSData *)data
                                    Success:(void(^)(NSArray *array))sucessBlock
                                    failuer:(void(^)(NSString *msg))failBlock {
-    NSString *urlString = @"booksInfo/bookcity.xml";
+    NSString *urlString = @"booksInfo";
     YHFtpRequestOperation *operation = [[BookNetManager sharedInstance] post:urlString data:data success:^(id data) {
-        NSArray *array = [YHFtpLogic parserFileModelWithData:data];
+        
         NSLog(@"1111");
     } failuer:^(NSError *msg) {
-        NSLog(@"1111");
+        NSLog(@"111");
     }];
     
     return operation;
